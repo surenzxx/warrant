@@ -14,8 +14,14 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'rails_bootstrap_navbar'
 gem 'autoprefixer-rails'
+gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'rails_bootstrap_navbar'
+
+
+source 'https://rails-assets.org' do
+	gem 'rails-assets-tether'
+end
 
 # gem for bootstrap
 gem 'bootstrap-sass'
