@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Crims</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Zip</th>
+      <th>Date</th>
+      <th>Plate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @crims.each do |crim| %>
+      <tr>
+        <td><%= crim.name %></td>
+        <td><%= crim.zip %></td>
+        <td><%= crim.date %></td>
+        <td><%= crim.plate %></td>
+        <td><%= link_to 'Show', crim %></td>
+        <td><%= link_to 'Edit', edit_crim_path(crim) %></td>
+        <td><%= link_to 'Destroy', crim, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Crim', new_crim_path %>

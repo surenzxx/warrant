@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @crim.name %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @crim.zip %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @crim.date %>
+</p>
+
+<p>
+  <strong>Plate:</strong>
+  <%= @crim.plate %>
+</p>
+
+<%= link_to 'Edit', edit_crim_path(@crim) %> |
+<%= link_to 'Back', crims_path %>

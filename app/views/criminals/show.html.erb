@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @criminal.name %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @criminal.zip %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @criminal.date %>
+</p>
+
+<p>
+  <strong>Plate:</strong>
+  <%= @criminal.plate %>
+</p>
+
+<%= link_to 'Edit', edit_criminal_path(@criminal) %> |
+<%= link_to 'Back', criminals_path %>
